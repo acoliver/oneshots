@@ -1,0 +1,14 @@
+{
+  "amazon_fake.msg":   {"sender": "",        "tier": "SCAM",        "score": 9.0},
+  "arrest.msg":        {"sender": "",        "tier": "LIKELY_SCAM", "score": 6.0},
+  "chase_canonical.msg": {"sender": "",      "tier": "CAUTION",     "score": 0.0},
+  "clean_amazon.msg":  {"sender": "262966",  "tier": "SAFE",        "score": -4.0},
+  "irs.msg":           {"sender": "",        "tier": "SCAM",        "score": 18.0},
+  "t_birthday.msg":    {"sender": "",        "tier": "CAUTION",     "score": 0.0},
+  "t_gift.msg":        {"sender": "",        "tier": "SCAM",        "score": 9.0},
+  "v_chase.msg":       {"sender": "888-888-8888", "tier": "SCAM",   "score": 15.0},
+  "v_clean.msg":       {"sender": "28777",   "tier": "SAFE",        "score": -4.0},
+  "v_family.msg":      {"sender": "",        "tier": "CAUTION",     "score": 0.0},
+  "v_usps.msg":        {"sender": "888-888-8888", "tier": "SCAM",   "score": 15.0},
+  "zelle.msg":         {"sender": "",        "tier": "SCAM",        "score": 9.0}
+}
