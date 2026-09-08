@@ -21,11 +21,19 @@ Repos are pulled in as git submodules, so an existing one-shot can be added as a
 
 ```
 oneshots/
-  README.md                this file: the brief, and what the repo holds
-  caveate/                 submodule: smishing triage
-    README.md             caveate from a user's perspective
-    research/DECISION.md  the research and the decisions that design follows
-    src/caveate/          engine, CLI, brand registry, extractor
-    harness/              verify.sh plus a hand-labeled corpus with a gold file
-  vellego/                 submodule: accessibility remediation engine + readability scorecard
+  README.md              this file: the brief, and what the repo holds
+  caveate/               smishing triage (Python, stdlib only)
+    README.md            caveate from a user's perspective
+    research/DECISION.md the research and the decisions that design follows
+    src/caveate/         engine, CLI, brand registry, extractor
+    harness/            verify.sh plus a hand-labeled corpus with a gold file
+    tmp/                gitignored verification scratch space
+  vellego/              submodule: accessibility remediation engine + readability scorecard
+    README.md           what it does and how to run it
+    docs/              design and research-round docs
+    RESEARCH/          phase1 research outputs
+    src/               scanner, remediators, plain-language, diff, CLI
+    test/              vitest specs
+    harness/           verify.sh plus fixtures (real and plain)
+    site/              static landing page
 ```
