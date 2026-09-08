@@ -8,11 +8,11 @@ A monorepo for one-shot tools. Each subdirectory is a self-contained project bui
 
 ## The prompt behind Caveate
 
-Caveate came out of a single brief:
+Caveate came out of a single brief. Reproduced below, cleaned up from how it was given and genericized so it no longer points at the local folders of earlier projects:
 
-> Build and verify "Caveate", a deterministic, offline, auditable smishing/scam triage CLI (Python) with a brand registry, signal-based scoring engine, and `check` / `explain` / `corpus` / `registry` subcommands.
+> Use a research-first process to build something that genuinely makes the world a better place. Do not duplicate acoliver/vellego: the project should be novel, either solving a problem with no established solution or offering a clearly different and better approach. It has to be measurable, and you have to be able to test that it works. Use web search and other tools to gather information. For the name: check that it does not already exist, including a patent-office search; be creative and pick a defensible name that can't get you sued and does not collide in the namespace; make it pronounceable if you can. Consider searching alternative data sources, and draw on research from previous projects without being limited by it. Ship a runnable harness that tests whatever the thing does, and prove it works. If you use subagents, use only ones on the dsflash-mi300x profile, and no other subagents or models.
 
-A research-first pass (recorded in `caveate/research/DECISION.md`) turned that brief into a concrete requirement set:
+That brief became the concrete spec recorded in `caveate/research/DECISION.md`:
 
 - every design decision tied to a cited source
 - same input always produces byte-identical output
