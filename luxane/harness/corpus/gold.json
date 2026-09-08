@@ -1,0 +1,84 @@
+{
+  "tylenol-plus-dayquil": {
+    "label": "cabinet of Tylenol Extra Strength x4/day plus DayQuil Severe Cold & Flu x2/day",
+    "args": ["Tylenol Extra Strength", "4", "DayQuil Severe Cold & Flu", "2"],
+    "totals": {
+      "acetaminophen": 2650,
+      "dextromethorphan": 20,
+      "guaifenesin": 400,
+      "phenylephrine": 10
+    },
+    "violations": {
+      "acetaminophen": false,
+      "dextromethorphan": false,
+      "guaifenesin": false,
+      "phenylephrine": false
+    }
+  },
+  "advil-plus-aleve": {
+    "label": "cabinet of Aleve x3/day plus a separate generic ibuprofen 200 x2/day",
+    "args": ["Advil Cold & Sinus", "6", "Aleve", "3"],
+    "totals": {
+      "ibuprofen": 1200,
+      "pseudoephedrine": 180,
+      "naproxen": 660
+    },
+    "violations": {
+      "ibuprofen": false,
+      "pseudoephedrine": false,
+      "naproxen": false
+    }
+  },
+  "excedrin-plus-childrens": {
+    "label": "Excedrin Extra Strength x4/day plus children's products plus acetaminophen x6/day",
+    "args": ["Excedrin Extra Strength", "4", "Advil Cold & Sinus", "1"],
+    "totals": {
+      "acetaminophen": 1000,
+      "aspirin": 1000,
+      "caffeine": 260,
+      "ibuprofen": 200,
+      "pseudoephedrine": 30
+    },
+    "violations": {
+      "acetaminophen": false,
+      "aspirin": false,
+      "caffeine": false,
+      "ibuprofen": false,
+      "pseudoephedrine": false
+    }
+  },
+  "mucinex-hair": {
+    "label": "Mucinex DM x2/day plus a 'hair' (extra) acetaminophen 325 x2/day",
+    "args": ["Mucinex DM", "8"],
+    "totals": {
+      "guaifenesin": 4800,
+      "dextromethorphan": 240
+    },
+    "violations": {
+      "guaifenesin": true,
+      "dextromethorphan": true
+    }
+  },
+  "clean-day": {
+    "label": "a clean single-product day",
+    "args": ["Claritin", "1"],
+    "totals": {
+      "loratadine": 10
+    },
+    "violations": {
+      "loratadine": false
+    }
+  },
+  "double-allergy": {
+    "label": "two daily-allergy products on the same day",
+    "args": ["Claritin", "1", "Zyrtec", "1"],
+    "totals": {
+      "loratadine": 10,
+      "cetirizine": 10
+    },
+    "violations": {
+      "loratadine": false,
+      "cetirizine": false
+    }
+  }
+}

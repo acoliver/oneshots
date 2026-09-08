@@ -16,6 +16,7 @@ Repos are pulled in as git submodules, so an existing one-shot can be added as a
 
 - `caveate/` - deterministic, offline smishing triage. Paste a suspicious text, get a verdict, the reasons, and the one official channel that matters. See `caveate/README.md` for how to use it.
 - `vellego/` - deterministic, open-source remediation engine for web accessibility, plus a plain-language readability scorecard. Fixes machine-detectable failure classes in the source with a reviewable diff. See `vellego/README.md` for how to use it.
+- `luxane/` - deterministic, offline total-daily-dose checker for home medication. Type the products you took and how often; get your per-ingredient 24-hour total across all of them, against citable FDA/label ceilings. See `luxane/README.md` for how to use it.
 
 ## Layout
 
@@ -36,4 +37,10 @@ oneshots/
     test/              vitest specs
     harness/           verify.sh plus fixtures (real and plain)
     site/              static landing page
+  luxane/               total-daily-dose checker for home medication (Python, stdlib only)
+    README.md           luxane from a user's perspective
+    research/DECISION.md the research and the decisions that design follows
+    src/luxane/        registry (products + ceilings), engine, CLI
+    harness/           verify.sh plus a labeled corpus with a gold file
+    tmp/               gitignored verification scratch space
 ```
