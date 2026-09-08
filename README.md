@@ -10,18 +10,22 @@ The prompt behind the repo, cleaned up from how it was given and genericized so 
 
 "Make the world a better place" is the headline. What keeps a one-shot credible: a name that is checked and defensible, evidence gathered before the build, and a harness anyone can run and watch pass.
 
+Repos are pulled in as git submodules, so an existing one-shot can be added as a peer without copying its history into this repo.
+
 ## Contents
 
 - `caveate/` - deterministic, offline smishing triage. Paste a suspicious text, get a verdict, the reasons, and the one official channel that matters. See `caveate/README.md` for how to use it.
+- `vellego/` - deterministic, open-source remediation engine for web accessibility, plus a plain-language readability scorecard. Fixes machine-detectable failure classes in the source with a reviewable diff. See `vellego/README.md` for how to use it.
 
 ## Layout
 
 ```
 oneshots/
   README.md                this file: the brief, and what the repo holds
-  caveate/
+  caveate/                 submodule: smishing triage
     README.md             caveate from a user's perspective
     research/DECISION.md  the research and the decisions that design follows
     src/caveate/          engine, CLI, brand registry, extractor
     harness/              verify.sh plus a hand-labeled corpus with a gold file
+  vellego/                 submodule: accessibility remediation engine + readability scorecard
 ```
